@@ -8,7 +8,7 @@ El proyecto utiliza **HTML, CSS y JavaScript**, e incluye distintos recursos int
 ## Enlace a la página web
 
 🔗 **Página web publicada:**  
-Puedes acceder a la página desde <a href="https://ssevas-q.github.io/Pagina-web-interactiva/" target="_blank" title="Página web interactiva de Daniel y Sebastian">aquí</a> o puedes entrar desde el enlace directamente<a href="https://ssevas-q.github.io/Pagina-web-interactiva/" target="_blank" title="Página web interactiva de Daniel y Sebastian">https://ssevas-q.github.io/Pagina-web-interactiva/</a>.
+Puedes acceder a la página desde <a href="https://ssevas-q.github.io/Pagina-web-interactiva/" target="_blank" title="Página web interactiva de Daniel y Sebastian">aquí</a> o puedes entrar desde el enlace directamente <a href="https://ssevas-q.github.io/Pagina-web-interactiva/" target="_blank" title="Página web interactiva de Daniel y Sebastian">https://ssevas-q.github.io/Pagina-web-interactiva/</a>.
 
 ## Contenido del proyecto
 
