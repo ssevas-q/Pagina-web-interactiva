@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El CO₂ en el cambio climático</title>
+
+  <!-- Fuentes (titulares tipo reportaje + texto legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <span class="badge">ESPECIAL</span>
+      <span class="muted">Medio Ambiente</span>
+      <span class="spacer"></span>
+      <span class="muted small">Actividad 1.10</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="kicker">Cambio climático</p>
+      <h1>El CO₂ en el cambio climático</h1>
+      <p class="lead">
+        Una explicación sencilla (nivel 2º Bach) sobre por qué el CO₂ importa,
+        con interacciones hechas en JavaScript.
+      </p>
+
+      <!-- Recurso JS: campo de texto -->
+      <div class="hero-box">
+        <label for="userInput" class="label">Escribe tu titular:</label>
+        <input id="userInput" class="input" type="text" placeholder="Ej: El CO₂ afecta a nuestro futuro" />
+        <p class="muted small">Lo que escribas aparecerá en el destacado.</p>
+
+        <div class="highlight" aria-live="polite">
+          <p class="highlight-label">DESTACADO</p>
+          <p id="userOutput" class="highlight-text">—</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATOS CLAVE -->
+    <section class="data-section">
+      <h2 class="section-title">Datos clave sobre el CO₂</h2>
+      <div class="data-grid">
+        <div class="data-card">
+          <p class="data-number">+50%</p>
+          <p class="data-text">Aumento del CO₂ desde la Revolución Industrial (aprox.).</p>
+        </div>
+        <div class="data-card">
+          <p class="data-number">1,5 °C</p>
+          <p class="data-text">Objetivo para evitar impactos más graves del calentamiento global.</p>
+        </div>
+        <div class="data-card">
+          <p class="data-number">CO₂</p>
+          <p class="data-text">Gas que atrapa calor: el “efecto invernadero” se intensifica.</p>
+        </div>
+      </div>
+      <p class="muted small note">
+        (Son datos orientativos para fines educativos. Puedes ajustarlos si tu profe lo pide.)
+      </p>
+    </section>
+
+    <!-- LÍNEA TEMPORAL -->
+    <section class="timeline">
+      <h2 class="section-title">El CO₂ a lo largo del tiempo</h2>
+
+      <div class="timeline-item">
+        <span class="timeline-year">Antes</span>
+        <p class="timeline-text">Durante miles de años, los niveles de CO₂ fueron relativamente estables.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-year">Ahora</span>
+        <p class="timeline-text">La actividad humana aumenta el CO₂: energía, transporte e industria.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span class="timeline-year">Futuro</span>
+        <p class="timeline-text">Reducir emisiones ayuda a frenar el calentamiento y sus consecuencias.</p>
+      </div>
+    </section>
+
+    <!-- GRID PRINCIPAL -->
+    <section class="grid">
+      <!-- Recurso JS: intercambio de imágenes al hacer clic -->
+      <article class="card">
+        <h2 class="h2">Una imagen que cambia</h2>
+        <p class="muted">Haz clic para alternar entre dos imágenes (sin que la página salte).</p>
+
+        <img
+          id="swapImg"
+          class="main-img"
+          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80"
+          alt="Naturaleza y paisaje relacionado con el medio ambiente"
+        />
+
+        <p id="swapMsg" class="chip">Clic para cambiar</p>
+      </article>
+
+      <!-- Recurso JS: objeto en movimiento -->
+      <article class="card">
+        <h2 class="h2">CO₂ en movimiento</h2>
+        <p class="muted">Representación simple: una “partícula” se mueve y rebota.</p>
+
+        <div class="stage" aria-label="Zona de animación">
+          <div id="dot" class="dot" title="Partícula de CO₂"></div>
+          <div class="stage-line"></div>
+        </div>
+
+        <div class="buttons">
+          <button id="startBtn" class="btn">Iniciar</button>
+          <button id="stopBtn" class="btn btn-ghost">Parar</button>
+        </div>
+
+        <p class="muted small">Esto cuenta como “objeto en movimiento” hecho con JavaScript.</p>
+      </article>
+
+      <!-- Imagen extra + enlace externo accesible -->
+      <article class="card">
+        <h2 class="h2">Más información</h2>
+
+        <img
+          class="extra-img"
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+          alt="Paisaje natural relacionado con el cambio climático"
+        />
+
+        <p class="muted">
+          Enlace externo:
+          <a
+            href="https://elpais.com/especiales/2019/el-co2-en-el-cambio-climatico/"
+            target="_blank"
+            rel="noopener"
+            title="Abrir especial de EL PAÍS en una nueva pestaña"
+          >
+            El CO₂ en el cambio climático – EL PAÍS
+          </a>
+        </p>
+
+        <p class="muted small">
+          Inspiración visual: estructura de reportaje (titular grande, bloques y datos).
+        </p>
+      </article>
+    </section>
+
+    <!-- CIERRE CON “SENTIMIENTO” -->
+    <section class="action">
+      <h2 class="section-title">¿Qué podemos hacer?</h2>
+      <p class="action-text">
+        El cambio climático no es solo un problema del futuro. Acciones pequeñas ayudan:
+        ahorrar energía, usar transporte sostenible y reducir el desperdicio.
+      </p>
+      <p class="action-quote">“El mayor peligro no es el cambio climático, sino la indiferencia.”</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Página realizada por <strong>Sebastian Pinto</strong> y <strong>Daniel Lois</strong> ·
+      Actividad 1.10 · Licencia: <strong>Creative Commons Legal Code – CC0 1.0 Universal</strong>
+    </p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
